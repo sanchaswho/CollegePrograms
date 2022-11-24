@@ -1,41 +1,19 @@
-﻿uses graphaBC;
-
-var
-  i, k, x, y: integer;
-
-begin
-  
-  rectangle(50, 50, 450, 450); 
-  textout(50, 75, '8'); 
-  textout(50, 162, '7'); 
-  textout(50, 249, '6'); 
-  textout(50, 336, '5'); 
-  textout(50, 423, '4');
-  textout(50, 510, '3'); 
-  textout(50, 597, '2');
-  textout(50, 684, '1'); 
-  brush.Color := clBlack;
-  y := 150;
-  
-  for i := 1 to 4 do
-  begin
-    x := 900;
-    for k := 1 to 4 do
-    begin
-      rectangle(x, y, x - 100, y + 100);
-      x := x - 200;
-    end;
-    y := y + 200;
-  end;
-  x := 800;
-  for i := 1 to 4 do
-  begin
-    y := 50;
-    for k := 1 to 4 do
-    begin
-      rectangle(x, y, x - 100, y + 100);
-      y := y + 200;
-    end;
-    x := x - 200;
-  end;
-end.
+uses graphabc;
+BEGIN
+setbrushcolor(rgb(22,20,158));
+circle(55,50,10);
+setbrushcolor(rgb(196,121,245));
+circle(130,100,25);
+setbrushcolor(rgb(151,235,210));
+circle(190,150,30);
+setbrushcolor(rgb(236,35,101));
+circle(250,190,40);
+setbrushcolor(rgb(251,163,247));
+circle(310,230,50);
+setbrushcolor(rgb(1,58,96));
+circle(370,270,60);
+setbrushcolor(rgb(164,84,252));
+circle(430,310,70);
+setbrushcolor(rgb(74,136,17));
+circle(490,350,80);
+END.
